@@ -1,0 +1,79 @@
+/* WeatherApp-specific styling */
+
+/* Main container for weather app */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+/* Weather app heading */
+.weather-heading {
+  color: #1e1e1e;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+/* SearchBox styling */
+.SearchBox {
+  background-color: rgba(255,255,255,0.95);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+.SearchBox h3 {
+  margin-bottom: 20px;
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+/* InfoBox styling */
+.InfoBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.InfoBox h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.InfoBox .MuiCard-root {
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.InfoBox p {
+  margin: 5px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Card image container */
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .SearchBox, .InfoBox .MuiCard-root {
+    width: 90%;
+  }
+
+  .weather-heading {
+    font-size: 2rem;
+  }
+}
